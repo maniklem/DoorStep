@@ -48,6 +48,26 @@
 </head>
 
 <body style="overflow: hidden">
+  
+  
+  <!-- Add this line -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- Firebase Configuration -->
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDJJ-SqqT8-WFqboXP4khilcsHnpCUe_i0",
+        authDomain: "doorstep-st.firebaseapp.com",
+        databaseURL: "https://doorstep-st.firebaseio.com",
+        projectId: "doorstep-st",
+        storageBucket: "doorstep-st.appspot.com",
+        messagingSenderId: "...",
+        appId: "1:...:web:...",
+        measurementId: "G-...",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   <!-- Loading Indicator -->
   <div id="loading_container" class="container">
     <img src="./assets/loading.gif" alt="loading indicator" class="indicator">
